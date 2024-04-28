@@ -14,10 +14,10 @@ goboot.sh <version> <checksum file> <dest directory> [<bin directory> [<cache di
 where
 
 * version is the Go version, like `1.20.1`
-* version file is the file with checksums, see below
-* "dest directory" is the directory to download Go to.
-* "bin directory" is the directory to link `go` and `gofmt` to. No linking is done if not specified.
-* "cache directory" is a directory to use as a cache. Defaults to `~/.cache/goboot/`
+* checksum file is a text file with Go release checksums, see below
+* dest directory is the directory to download Go to.
+* bin directory is the directory to link `go` and `gofmt` to. No linking is done if not specified.
+* cache directory is a directory to use for caching downloaded files. Defaults to `~/.cache/goboot/`
 
 ## Checksum file
 
