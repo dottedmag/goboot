@@ -27,9 +27,13 @@ Checksum file has format
 ```
 where `os` and `arch` are in Go format.
 
+Use `gen-checksums.sh` to generate file in this format.
+
 ## Dependencies
 
 This script requires:
 - POSIX shell as `/bin/sh`, and basic utilities like `tar`, `rm`, `ln`, `mkdir`
 - `curl` >= 7.67 or `wget`
 - `sha256sum` or `shasum`
+
+`gen-checksums.sh` additionally requires `jq`.
