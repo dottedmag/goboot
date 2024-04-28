@@ -87,7 +87,7 @@ get_checksum() { # $1=version $2=os $3=arch
 }
 
 get_go() {
-  echo "Downloading Go $VERSION-$OS-$ARCH..."
+  echo "Downloading Go $VERSION $OS/$ARCH..."
 
   # do not merge with assignments, or exit code from subshells is lost
   local url csum cachefile tempdir
